@@ -12,7 +12,7 @@
 
 var msg = 'Hello Wordd';
 document.getElementById("demo").innerHTML = msg;
-
+document.write("test2");
 </script>
 
 </body>
