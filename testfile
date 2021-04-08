@@ -1,1 +1,19 @@
-https://github.com/robinput598/Group11.git
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>test</h2>
+<p>testtest</p>
+
+<p id="demo"></p>
+
+<script>
+
+
+var msg = 'Hello Wordd';
+document.getElementById("demo").innerHTML = msg;
+
+</script>
+
+</body>
+</html>
