@@ -2,18 +2,30 @@
 <html>
 <body>
 
-<h2>test</h2>
-<p>testtest</p>
+<h2>JavaScript for efficient supermarket</h2>
 
-<p id="demo"></p>
-
+<p id="productList"></p>
+<form>
 <script>
+var products = ["Milk", "Bread", "IceCream", "Fruit", "Meat", "Potato"];
+var description = "The following products are available in the supermarket: <br>";
+var i;
+for (i = 0; i < products.length; i++) {
+  description += '<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">' + products[i] + "<br>"
 
-
-var msg = 'Hello Wordd';
-document.getElementById("demo").innerHTML = msg;
-document.write("test2");
+}
+document.getElementById("productList").innerHTML = description;
 </script>
 
+
+
+<script>
+/*
+*/
+</script>
+<input type="submit" name="submit" value="Continue">
+</form>
+
+</form>
 </body>
 </html>
