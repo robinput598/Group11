@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript for efficient supermarket</h2>
+
+
+<form method='post' id='userform' action='index.php'> <tr>
+    <td>Trouble Type</td><br>
+    <td>
+    <input type='checkbox' name='ProductList[]' value='Milk'>Milk<br>
+    <input type='checkbox' name='ProductList[]' value='Bread'>Bread<br>
+    <input type='checkbox' name='ProductList[]' value='Meat'>Meat<br>
+    <input type='checkbox' name='ProductList[]' value='IceCream'>IceCream<br>
+    <input type='checkbox' name='ProductList[]' value='Chips'>Chips<br>
+    <input type='checkbox' name='ProductList[]' value='Cookies'>Cookies<br>
+  </td> </tr> </table> <input type='submit' name='submit' value ="Continue"> </form>
+
+<script>
+var Products =
+    <?php echo json_encode($_POST['ProductList']); ?>;
+
+document.write("You have selected the following products: <br>");
+for(var i = 0; i < Products.length; i++){
+    document.write( (i+1) + ".   "+Products[i] + "<br>");
+}
+</script>
+
+
+
+</form>
+</body>
+</html>
